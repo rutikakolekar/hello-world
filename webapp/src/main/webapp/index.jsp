@@ -1,7 +1,7 @@
 <form action="action_page.php">
   <div class="container">
     <h1>New user Register for DevOps Learning</h1>
-    <h1>DevOps is a new game changer</h1>
+    <h1>DEVOPS IS A NEW GAME CHANGER </h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
      
