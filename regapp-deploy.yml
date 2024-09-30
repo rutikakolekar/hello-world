@@ -1,29 +1,21 @@
-apiVersion: apps/v1 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: valaxy-regapp
-  labels: 
-     app: regapp
-
+  name: my-web-app
+  labels:
+    app: my-web-app
 spec:
-  replicas: 2 
+  replicas: 2
   selector:
     matchLabels:
-      app: regapp
-
+      app: my-web-app
   template:
     metadata:
       labels:
-        app: regapp
+        app: my-web-app
     spec:
       containers:
-      - name: regapp
-        image: valaxy/regapp
-        imagePullPolicy: Always
+      - name: my-web-app
+        image: rutikakolekar/my-webapp
         ports:
-        - containerPort: 8080
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 1
+        - containerPort: 80
